@@ -1,13 +1,21 @@
 function saveTheData(event) {
     event.preventDefault();
 
-    const Price = event.target.price.value;
+    const Price = parseFloat(event.target.price.value);
     const Product = event.target.productName.value;
 
     let userDetails = {
         Price,
         Product,
     };
+
+    let Amount = parseFloat(document.getElementById('TotalPrice').value) || 0;
+    Amount += Price;
+
+    // Update the TotalPrice input field
+    document.getElementById('TotalPrice').value = Amount.toFixed(2);
+
+
 
     // Store data in LocalStorage
     localStorage.setItem(Product, JSON.stringify(userDetails));

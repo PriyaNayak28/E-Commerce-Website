@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, hsl(300, 3%, 6%), rgb(103, 102, 103), #f4f5f0);
+}
+
+header {
+
+    height: 30%;
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#TotalPrice {
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    padding: 9px;
+    background-color: black;
+    width: 100%;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    /* Set flex direction to row */
+    height: 70%;
+    width: 100%;
+}
+
+#form {
+
+    color: aliceblue;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 200px;
+
+    /* Ensure background covers the full height */
+}
+
+#listitem {
+
+    color: rgb(7, 10, 12);
+    flex: 1;
+    /* Take up half of the width */
+    display: flex;
+    flex-direction: column;
+    /* Optional: If you want list items stacked vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5rem;
+
+}
+
+#price {
+    width: 100%;
+    height: 3%;
+    padding: 9px;
+}
+
+#productName {
+    width: 100%;
+    height: 3%;
+    padding: 9px;
+}
+
+#btn {
+    width: 20%;
+    height: 3%;
+    padding: 9px;
+}
+
+#btn:hover {
+    background-color: black;
+    color: white;
+}

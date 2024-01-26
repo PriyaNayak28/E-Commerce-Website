@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>goShopping</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <label for="TotalPrice">
+                <h1>Total Price : <input type="number" id="TotalPrice"></h1>
+            </label>
+        </nav>
+    </header>
+    <div id="main-container">
+        <form onsubmit="saveTheData(event)" id="form">
+            <label for="price">Price<input type="number" name="price" id="price" required></label><br>
+            <label for="productName">Product<input type="text" name="productName" id="productName" required></label><br>
+            <button id="btn">Add </button>
+        </form>
+
+        <ul id="listitem"> Products : </ul>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+        <script src="web.js"></script>
+    </div>
+</body>
+
+</html>
